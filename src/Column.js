@@ -12,7 +12,7 @@ var Column = React.createClass({
       return <Box value={elem} alt={index} key={i} />
     });
     return(
-      <section value={index} className="column">
+      <section value={index} className="column" onClick={this.props.onClick}>
         {boxes}
       </section>
     )
